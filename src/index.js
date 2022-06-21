@@ -33,9 +33,9 @@ function createCard(pokemon) {
     let defense = document.createElement('li');
     defense.textContent = `Defense: ${pokemon.stats[2].base_stat}`;
     let spAttack = document.createElement('li');
-    spAttack.textContent = `Sp. Attack: ${pokemon.stats[3].base_stat}`;
+    spAttack.textContent = `SPECIAL-ATTACK: ${pokemon.stats[3].base_stat}`;
     let spDefense = document.createElement('li');
-    spDefense.textContent = `Sp. Defense: ${pokemon.stats[4].base_stat}`;
+    spDefense.textContent = `SPECIAL-Defense: ${pokemon.stats[4].base_stat}`;
     let speed = document.createElement('li');
     speed.textContent = `Speed: ${pokemon.stats[5].base_stat}`;
     
@@ -49,5 +49,5 @@ function createCard(pokemon) {
 }
 
 for(let pokemons of data) {
-createCard(pokemons);
+    createCard(pokemons);
 }
